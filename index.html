@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Portfolio professionnel — Louis Schwartz</title>
+<meta name="author" content="Louis Schwartz">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Portfolio de Louis Schwartz, étudiant en informatique à l’EPITA Toulouse : parcours, projets et compétences.">
+<meta name="theme-color" content="#5a3fd6">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="assets/styles/portfolio.css">
+<script>
+(function () {
+  var root = document.documentElement, saved = null;
+  root.classList.add("js");
+  try { saved = localStorage.getItem("theme"); } catch (e) {}
+  root.dataset.theme = saved || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+})();
+</script>
+</head>
+<body id="top">
+<header class="topbar">
+  <a class="brand" href="#top">Louis Schwartz</a>
+  <span class="where" aria-live="polite"></span>
+  <button type="button" data-action="theme">Sombre</button>
+  <button type="button" class="menu" data-action="menu" aria-expanded="false" aria-controls="sommaire-nav">Sommaire</button>
+  <span class="progress" aria-hidden="true"></span>
+</header>
+
+
+<!-- ======================= Page de garde ======================= -->
+
+<section class="cover">
+  <div class="bar"></div>
+  <p class="title">Portfolio<br>professionnel</p>
+  <p class="subtitle">Parcours, projets et compétences d’un étudiant en informatique, <br>du jeu vidéo vers l’intelligence artificielle et la cybersécurité.</p>
+
+  <div class="who">
+    <p class="name">Louis Schwartz</p>
+    <p class="role">Étudiant en deuxième année du cycle préparatoire intégré · EPITA Toulouse</p>
+    <p class="contact">Promotion 2030 · l.schwartz_pro@protonmail.com · github.com/louiswtz</p>
+    <p class="actions web-only"><a class="btn primary" href="documents/portfolio-louis-schwartz-numerique.pdf">Télécharger le PDF</a><a class="btn" href="https://github.com/louiswtz">GitHub</a><a class="btn" href="#contact">Me contacter</a></p>
+  </div>
+
+  <table class="facts">
+    <tr>
+      <td style="width:20%"><span class="k">Semestre</span>S3 · 2026-2027</td>
+      <td style="width:37%"><span class="k">Cours</span>Communication professionnelle, interculturelle et numérique</td>
+      <td style="width:20%"><span class="k">Encadré par</span>Salah Kabous</td>
+      <td><span class="k">Remis en</span>Octobre 2026</td>
+    </tr>
+  </table>
+</section>
+
+<!-- ======================= Sommaire ======================= -->
+
+<div class="layout">
+<nav class="toc" id="sommaire-nav" aria-label="Sommaire">
+  <h1 data-num="" id="sommaire" data-title="Sommaire">Sommaire</h1>
+  <ol>
+<li class="l1"><a href="#introduction"><span class="n">01</span><span class="t">Me présenter <small>introduction</small></span></a></li>
+<li class="l2"><a href="#d-ou-je-viens"><span class="n">1.1</span><span class="t">D’où je viens</span></a></li>
+<li class="l2"><a href="#a-quoi-sert"><span class="n">1.2</span><span class="t">À quoi sert ce portfolio</span></a></li>
+<li class="l2"><a href="#comment-lire"><span class="n">1.3</span><span class="t">Comment le lire</span></a></li>
+<li class="l1"><a href="#parcours"><span class="n">02</span><span class="t">Apprendre <small>mon parcours à l’EPITA</small></span></a></li>
+<li class="l2"><a href="#deux-ans"><span class="n">2.1</span><span class="t">Deux ans de cycle préparatoire</span></a></li>
+<li class="l2"><a href="#cours"><span class="n">2.2</span><span class="t">Ce que les cours m’ont donné</span></a></li>
+<li class="l2"><a href="#compte"><span class="n">2.3</span><span class="t">Ce qui a compté</span></a></li>
+<li class="l1"><a href="#projets"><span class="n">03</span><span class="t">Construire <small>quatre projets</small></span></a></li>
+<li class="l2"><a href="#myst"><span class="n">3.1</span><span class="t">Myst : faire jouer plusieurs machines ensemble</span></a></li>
+<li class="l2"><a href="#minimake"><span class="n">3.2</span><span class="t">MiniMake : refaire make pour le comprendre</span></a></li>
+<li class="l2"><a href="#ocr"><span class="n">3.3</span><span class="t">OCR : apprendre à une machine à lire (en cours)</span></a></li>
+<li class="l2"><a href="#icarus"><span class="n">3.4</span><span class="t">Icarus : dessiner mon propre bureau (en cours)</span></a></li>
+<li class="l1"><a href="#engagement"><span class="n">04</span><span class="t">S’engager <small>le Bureau des élèves</small></span></a></li>
+<li class="l2"><a href="#bde"><span class="n">4.1</span><span class="t">Trouver des partenaires pour les étudiants</span></a></li>
+<li class="l1"><a href="#competences"><span class="n">05</span><span class="t">Faire le point <small>compétences et bilan</small></span></a></li>
+<li class="l2"><a href="#c1"><span class="n">5.1</span><span class="t">Programmer au plus près de la machine et du réseau</span></a></li>
+<li class="l2"><a href="#c2"><span class="n">5.2</span><span class="t">Concevoir un logiciel, de l’architecture à l’interface</span></a></li>
+<li class="l2"><a href="#c3"><span class="n">5.3</span><span class="t">Travailler en équipe et intégrer le travail des autres</span></a></li>
+<li class="l2"><a href="#synthese"><span class="n">5.4</span><span class="t">Vue d’ensemble</span></a></li>
+<li class="l2"><a href="#bilan"><span class="n">5.5</span><span class="t">Forces et chantiers</span></a></li>
+<li class="l1"><a href="#ouverture"><span class="n">06</span><span class="t">Continuer <small>perspectives</small></span></a></li>
+<li class="l2"><a href="#attire"><span class="n">6.1</span><span class="t">Ce qui m’attire</span></a></li>
+<li class="l2"><a href="#vise"><span class="n">6.2</span><span class="t">Ce que je vise</span></a></li>
+<li class="l1"><a href="#conclusion"><span class="n">07</span><span class="t">Conclure</span></a></li>
+</ol>
+</nav>
+<main>
+
+<!-- ======================= 01 Introduction ======================= -->
+
+<h1 class="first" id="introduction" data-title="Me présenter"><span class="num">01</span>Me présenter <small>introduction</small></h1>
+
+<h2 id="d-ou-je-viens"><span class="num">1.1</span>D’où je viens</h2>
+
+<p>Je m’appelle Louis Schwartz. Je suis en deuxième année du cycle préparatoire de l’EPITA, à Toulouse. J’y suis entré après un baccalauréat général, spécialités mathématiques et physique-chimie, obtenu avec la mention assez bien au lycée Turgot de Limoges.</p>
+
+<p>Je suis venu à l’informatique par le jeu vidéo : je voulais comprendre comment un jeu fonctionne, puis en fabriquer un. J’ai choisi l’EPITA pour la qualité de sa formation en informatique. Depuis, deux domaines se sont ajoutés à cette première passion : l’intelligence artificielle et la cybersécurité.</p>
+
+<p>Je m’intéresse aux deux faces d’un logiciel : ce qui se passe sous le capot (mémoire, réseau, système) et ce que voit l’utilisateur (interface, graphismes). En dehors des cours, je suis vice-responsable du pôle partenariats du Bureau des élèves (BDE).</p>
+
+<h2 id="a-quoi-sert"><span class="num">1.2</span>À quoi sert ce portfolio</h2>
+
+<p>Ce portfolio est un outil évolutif : je le mettrai à jour à la fin de chaque semestre. Cette première version fait le point sur ma première année et sur le début de la deuxième. Elle a trois objectifs :</p>
+
+<ol>
+  <li>présenter mon parcours et ce que l’EPITA m’a appris ;</li>
+  <li>démontrer, preuves à l’appui, trois compétences sur lesquelles je peux m’appuyer ;</li>
+  <li>évaluer lucidement ce qui me manque encore, et dire comment j’y travaille.</li>
+</ol>
+
+
+<h2 id="comment-lire"><span class="num">1.3</span>Comment le lire</h2>
+
+<p>Le document va des faits vers l’analyse : ma formation (partie 2), quatre projets suivis chacun d’un retour critique (partie 3), mon engagement associatif (partie 4), puis trois compétences clés et mon bilan (partie 5). Les parties 6 et 7 regardent vers la suite. Les extraits de code et les sources complètent cette présentation.</p>
+
+<!-- ======================= 02 Parcours académique ======================= -->
+
+<h1 class="newpage" id="parcours" data-title="Apprendre"><span class="num">02</span>Apprendre <small>mon parcours à l’EPITA</small></h1>
+
+<h2 id="deux-ans"><span class="num">2.1</span>Deux ans de cycle préparatoire</h2>
+
+<p>Le cycle préparatoire de l’EPITA dure deux ans. Il associe l’informatique, les sciences et la communication, et donne une large place aux projets.</p>
+
+<table class="grid keep">
+  <thead>
+    <tr><th style="width:29mm">Domaine</th><th>Première année (2025-2026)</th><th style="width:60mm">Deuxième année, semestre 3</th></tr>
+  </thead>
+  <tbody>
+    <tr><th>Programmation</th><td>Python, puis C : pointeurs, chaînes de caractères, listes chaînées, pointeurs de fonctions ; Git</td><td>C : structures, fichiers, processus, images avec SDL</td></tr>
+    <tr><th>Algorithmique</th><td>Listes, matrices, arbres binaires et arbres de recherche ; initiation à OCaml</td><td>Théorie des langages : expressions régulières, automates</td></tr>
+    <tr><th>Architecture</th><td>Algèbre de Boole, logique séquentielle, microprocesseurs</td><td>Assembleur 68000 : pile, sous-programmes</td></tr>
+    <tr><th>Sciences</th><td>Suites, algèbre linéaire, probabilités ; mécanique, électronique, électromagnétisme</td><td>Mathématiques, physique</td></tr>
+    <tr><th>Ouvertures</th><td>IA générative, initiation à la cybersécurité, création d’entreprise, communication, anglais</td><td>Communication professionnelle (ce portfolio), anglais</td></tr>
+  </tbody>
+</table>
+
+<h2 id="cours"><span class="num">2.2</span>Ce que les cours m’ont donné</h2>
+
+<ul>
+  <li><strong>Programmer en C sans filet :</strong> je gère la mémoire à la main et je manipule pointeurs, listes chaînées et pointeurs de fonctions.</li>
+  <li><strong>Raisonner en algorithmes :</strong> choisir une structure de données, écrire une fonction récursive, estimer le coût d’un parcours.</li>
+  <li><strong>Comprendre la machine :</strong> de la porte logique à l’assembleur, je commence à voir ce que devient mon code une fois compilé.</li>
+  <li><strong>Relier les mathématiques au code :</strong> le calcul intégral et les probabilités m’ont servi dans le projet PFA, les dérivées dans le réseau de neurones de l’OCR.</li>
+  <li><strong>Travailler avec méthode :</strong> Git, tests automatiques, rendus à date fixe.</li>
+</ul>
+
+<h2 id="compte"><span class="num">2.3</span>Ce qui a compté</h2>
+
+<p>J’ai validé l’ensemble de ma première année. Mes meilleurs résultats sont en programmation et en algorithmique : ce sont aussi les matières où je travaille le plus volontiers.</p>
+
+<p>Trois projets ont marqué cette première année. Myst et MiniMake sont détaillés en partie 3. Le troisième, <strong>PFA (Probabilités, Finance et Assurance)</strong>, mêlait mathématiques et programmation : en C, j’ai programmé sept formules d’intégration numérique (rectangles, trapèzes, Simpson, Gauss), puis je les ai utilisées pour calculer le prix d’une option et la loi des remboursements d’un assuré.</p>
+
+<div class="note">
+  <span class="k">Ce que j’en retiens</span>
+  <p>La première année m’a appris à programmer avec rigueur : en C, un programme qui « marche » mais perd de la mémoire est un programme faux. PFA m’a montré que les mathématiques du cours deviennent des outils dès qu’on les code. Je souhaite maintenant mobiliser ces acquis dans un cadre professionnel (partie 6).</p>
+</div>
+
+<!-- ======================= 03 Projets ======================= -->
+
+<h1 class="newpage" id="projets" data-title="Construire"><span class="num">03</span>Construire <small>quatre projets</small></h1>
+
+<p>J’ai retenu quatre projets : deux projets scolaires terminés, un projet scolaire en cours et un projet personnel. Chacun suit le même plan : le but, ma part, mes choix, le résultat, puis ce que j’en retiens.</p>
+
+<h2 id="myst"><span class="num">3.1</span>Myst : faire jouer plusieurs machines ensemble</h2>
+
+<table class="meta">
+  <tr>
+    <td style="width:25%"><span class="k">Cadre</span>Projet de groupe du semestre 2</td>
+    <td style="width:21%"><span class="k">Quand</span>Janvier à mai 2026</td>
+    <td style="width:17%"><span class="k">Équipe</span>4 étudiants</td>
+    <td><span class="k">Outils</span>Python, pygame, asyncio, sockets UDP, JSON, Git</td>
+  </tr>
+</table>
+
+<h3>Le but</h3>
+<p>Créer un jeu d’exploration de donjon en 2D, jouable à plusieurs sur un réseau local : salles générées aléatoirement, monstres, coffres et boss.</p>
+
+<h3>Ma part</h3>
+<p>J’ai pris en charge deux parties : le mode multijoueur et une grande part des graphismes. Côté réseau, j’ai développé le serveur de jeu, la synchronisation des joueurs et des monstres, la découverte des parties sur le réseau local, le mode spectateur et la relance d’une partie pour tous les joueurs. Côté graphismes, j’ai réalisé les sprites du personnage principal, les salles du donjon et une partie des monstres (figure 2). J’ai aussi écrit les scripts d’installation pour Linux et Windows, et réorganisé le dépôt avant le rendu.</p>
+
+<figure class="wide">
+  <img src="assets/images/myst-reseau.svg" alt="Schéma de l'architecture réseau de Myst">
+  <figcaption><b>Figure 1.</b> Architecture réseau de Myst. Le serveur fait autorité : les clients envoient leurs actions et affichent l’état qu’ils reçoivent.</figcaption>
+</figure>
+
+<h3>Pourquoi ces choix</h3>
+<ul>
+  <li><strong>UDP plutôt que TCP.</strong> Dans un jeu d’action, une position vieille d’une demi-seconde ne sert plus à rien. UDP n’attend pas les paquets perdus : l’envoi suivant corrige l’erreur. Le serveur diffuse donc l’état de la partie 30&nbsp;fois par seconde (extrait&nbsp;1).</li>
+  <li><strong>Un serveur qui fait autorité.</strong> Monstres, collisions et dégâts sont calculés par le serveur, 20&nbsp;fois par seconde. Tous les joueurs voient ainsi le même monstre au même endroit.</li>
+  <li><strong>asyncio et JSON.</strong> Réception des messages, diffusion de l’état et comportement des monstres sont trois boucles qui tournent ensemble dans un seul processus. Les messages sont en JSON : plus lourd qu’un format binaire, mais lisible à l’œil nu, donc facile à déboguer.</li>
+</ul>
+
+<h3 class="newpage">Ce qui a résisté</h3>
+<ul>
+  <li><strong>Rejoindre une partie sans taper d’adresse IP.</strong> Le serveur annonce le nom de la partie sur le réseau local toutes les deux secondes ; le client écoute et se connecte à la partie demandée.</li>
+  <li><strong>UDP n’a pas de connexion.</strong> Rien ne signale qu’un joueur est parti : le serveur retire donc tout joueur silencieux depuis cinq secondes.</li>
+  <li><strong>Des joueurs désynchronisés à la relance.</strong> Quand l’hôte recommençait, certains clients restaient dans l’ancienne partie. Le serveur envoie maintenant un message de relance à tous, spectateurs compris.</li>
+</ul>
+
+<figure class="sprite-demo web-only">
+  <div class="stage" data-room="1" data-anim="idle"><div class="sprite" role="img" aria-label="Le personnage principal de Myst, animé"></div></div>
+  <div class="controls">
+    <span class="seg" role="group" aria-label="Animation">
+      <button type="button" data-set="anim" value="idle" aria-pressed="true">Attente</button>
+      <button type="button" data-set="anim" value="run" aria-pressed="false">Course</button>
+      <button type="button" data-set="anim" value="attack" aria-pressed="false">Attaque</button>
+    </span>
+    <span class="seg" role="group" aria-label="Salle">
+      <button type="button" data-set="room" value="1" aria-pressed="true">Salle 1</button>
+      <button type="button" data-set="room" value="2" aria-pressed="false">Salle 2</button>
+      <button type="button" data-set="room" value="3" aria-pressed="false">Salle 3</button>
+    </span>
+  </div>
+  <figcaption><b>Figure 2.</b> Graphismes réalisés pour Myst : le personnage principal, animé avec ses images d’origine, dans trois salles du donjon.</figcaption>
+</figure>
+
+<h3>Ce que ça donne</h3>
+<p>Un jeu jouable à plusieurs en réseau local, avec trois types de monstres, un boss, des coffres et un mode spectateur après la mort du joueur. Il s’installe en une commande, sous Linux comme sous Windows.</p>
+
+<p class="tags"><span class="k">Mobilise</span><span class="pill">Réseau (UDP, asyncio)</span><span class="pill">Python</span><span class="pill">Git en équipe</span><span class="pill">Graphisme 2D</span><span class="pill">Intégration</span><span class="pill">Persévérance</span></p>
+
+<div class="note">
+  <span class="k">Ce que j’en retiens</span>
+  <p>J’ai longtemps travaillé sur ma machine avant de partager mon code. Quand tout a été fusionné, la dernière semaine, les conflits se sont accumulés, jusque sur l’image de la carte, impossible à fusionner. La fin du projet a été plus tendue qu’elle n’aurait dû l’être. Depuis, je travaille par petites branches, fusionnées dès qu’une fonctionnalité marche : c’est ce que j’applique sur Icarus et sur l’OCR. Sur le plan technique, j’enverrais aujourd’hui seulement ce qui a changé, plutôt que l’état complet à chaque envoi.</p>
+</div>
+
+<details class="code project-code" id="annexe-1" data-pdf-title="Extrait 1 : Myst, la diffusion de l’état de la partie">
+  <summary>Voir un extrait de code <span>La synchronisation réseau de Myst</span></summary>
+  <p>Trente fois par seconde, le serveur retire les joueurs silencieux, puis envoie à chaque client la position des joueurs et l’essentiel de l’état des monstres.</p>
+  <figure>
+<pre>async def broadcast_loop(self):
+    while self.running:
+        now = time.time()
+        # Handle timeouts
+        to_remove = []
+        for addr, pid in list(self.clients.items()):
+            if now - self.player_states[pid]["last_seen"] > 5.0:
+                to_remove.append(addr)
+
+        for addr in to_remove:
+            pid = self.clients.pop(addr)
+            self.player_states.pop(pid)
+
+        if self.clients:
+            # Optimize monster states for network transfer
+            sync_monsters = {}
+            for mid, mstate in self.monster_states.items():
+                # Only send essential fields to keep UDP packet size small
+                sync_monsters[mid] = {
+                    "pos": mstate["pos"],
+                    "health": mstate["health"],
+                    "alive": mstate["alive"],
+                    # ...
+                }
+
+            sync_msg = {
+                "type": "sync",
+                "players": self.player_states,
+                "monsters": sync_monsters
+            }
+            for addr in self.clients:
+                await self.send_to(sync_msg, addr)
+
+        await asyncio.sleep(1/30) # 30 FPS updates</pre>
+  <figcaption><b>Source.</b> Fichier <span class="mono">server.py</span>, boucle de diffusion (abrégée).</figcaption>
+  </figure>
+</details>
+
+<h2 class="newpage" id="minimake"><span class="num">3.2</span>MiniMake : refaire make pour le comprendre</h2>
+
+<table class="meta">
+  <tr>
+    <td style="width:25%"><span class="k">Cadre</span>Projet individuel du semestre 2</td>
+    <td style="width:21%"><span class="k">Quand</span>Avril à mai 2026</td>
+    <td style="width:17%"><span class="k">Équipe</span>Seul</td>
+    <td><span class="k">Outils</span>C, appels système POSIX, AddressSanitizer, tests en Python</td>
+  </tr>
+</table>
+
+<h3>Le but</h3>
+<p>Reproduire le cœur de l’outil <code>make</code> : lire un fichier de règles, retrouver les dépendances d’une cible et lancer les commandes dans le bon ordre.</p>
+
+<h3>Ma part et mes choix</h3>
+<p>J’ai conçu et écrit seul l’ensemble du programme : environ 800&nbsp;lignes de C. Je l’ai découpé comme un petit compilateur. Le <em>tokenizer</em> transforme chaque ligne en une liste de jetons (mot, variable, opérateur, tabulation). Le <em>parser</em> reconnaît le type de la ligne (règle, commande ou variable) et remplit des listes chaînées. L’exécuteur parcourt les dépendances de façon récursive, puis lance chaque commande dans un processus fils (<code>fork</code>, puis <code>exec</code> ; extrait&nbsp;3). Ce découpage permet de vérifier chaque étape séparément : l’option <code>-p</code> affiche ce que le parser a compris, sans rien exécuter.</p>
+
+<h3>Ce qui a résisté</h3>
+<ul>
+  <li><strong>Les fuites de mémoire.</strong> Chaque jeton et chaque règle sont alloués dynamiquement. J’ai compilé avec AddressSanitizer, qui signale la moindre fuite, et écrit une fonction de libération par structure.</li>
+  <li><strong>Les variables.</strong> Les <code>${VAR}</code> sont remplacées juste avant l’exécution ; une variable inconnue vaut une chaîne vide, comme dans <code>make</code>.</li>
+</ul>
+
+<h3>Ce que ça donne</h3>
+<p>MiniMake lit un Makefile simple, exécute ses règles dans l’ordre et affiche des messages d’erreur calqués sur ceux de GNU make.</p>
+
+<p class="tags"><span class="k">Mobilise</span><span class="pill">C, mémoire</span><span class="pill">Analyse de texte</span><span class="pill">Appels système</span><span class="pill">Découpage en modules</span><span class="pill">Autonomie</span></p>
+
+<div class="note">
+  <span class="k">Ce que j’en retiens</span>
+  <p>Le découpage en modules est ce que je referais à l’identique. Les tests, non : je n’en ai écrit que deux, sur le cas normal, et j’ai vérifié les cas d’erreur à la main, la veille du rendu. Limite connue : mon MiniMake relance toutes les commandes, sans comparer les dates des fichiers. La prochaine fois, j’écris les tests des cas d’erreur avant le code.</p>
+</div>
+
+<details class="code project-code" id="annexe-3" data-pdf-title="Extrait 3 : MiniMake, l’exécution d’une cible">
+  <summary>Voir un extrait de code <span>L’exécution d’une cible dans MiniMake</span></summary>
+  <p>Avant d’exécuter une cible, MiniMake exécute chacune de ses dépendances. Une dépendance sans règle arrête le programme, avec le même message que GNU make.</p>
+  <figure>
+<pre>int run_target(char *target_name, makefile *mk)
+{
+  rule *r = find_rule(mk->rules, target_name);
+
+  if (!r)
+  {
+    printf("minimake: *** No rule to make target '%s'.  Stop.\n", target_name);
+    return -1;
+  }
+
+  if (r->depcies)
+  {
+    for (int i = 0; r->depcies[i] != NULL; i++)
+    {
+      if (!find_rule(mk->rules, r->depcies[i]))
+      {
+        printf("minimake: *** No rule to make target '%s', needed by '%s'.  Stop.\n",
+               r->depcies[i], r->target);
+        return -1;
+      }
+      if (run_target(r->depcies[i], mk) == -1)
+        return -1;
+    }
+  }
+
+  return execute_recipe(r, mk);
+}</pre>
+  <figcaption><b>Source.</b> Fichier <span class="mono">exec.c</span>, fonction <span class="mono">run_target</span>.</figcaption>
+  </figure>
+</details>
+
+<h2 class="newpage" id="ocr"><span class="num">3.3</span>OCR : apprendre à une machine à lire (en cours)</h2>
+
+<table class="meta">
+  <tr>
+    <td style="width:25%"><span class="k">Cadre</span>Projet de groupe du semestre 3</td>
+    <td style="width:21%"><span class="k">Quand</span>Automne 2026, en cours</td>
+    <td style="width:17%"><span class="k">Équipe</span>4 étudiants</td>
+    <td><span class="k">Outils</span>C, Makefile, AddressSanitizer, Git</td>
+  </tr>
+</table>
+
+<h3>Le but</h3>
+<p>Écrire un programme qui résout une grille de mots mêlés à partir d’une photo : repérer la grille, reconnaître chaque lettre, puis chercher les mots.</p>
+
+<h3>Ma part</h3>
+<p>Je suis chargé du réseau de neurones qui reconnaîtra les lettres. J’ai aussi posé l’ossature du dépôt : l’arborescence, le Makefile et une bibliothèque par module (réseau de neurones, image, solveur, interface), pour que chacun avance sans gêner les autres. J’aiderai ensuite au traitement d’image.</p>
+
+<h3>Comment c’est construit</h3>
+<p>Le réseau est écrit sans bibliothèque d’apprentissage. Chaque couche est une structure qui porte ses poids, ses biais et ses sorties ; le réseau est un tableau de couches. On peut donc changer le nombre de couches et de neurones sans toucher au code. Propagation avant, rétropropagation du gradient et mise à jour des poids tiennent en trois fonctions (extrait&nbsp;2).</p>
+
+<h3>Où j’en suis</h3>
+<p>Une preuve de concept : un réseau à deux neurones cachés apprend la fonction XOR, qu’un neurone seul ne peut pas apprendre. Après 100&nbsp;000 passes sur les quatre exemples, ses réponses sont à moins de 0,01 de la valeur attendue (figure 3).</p>
+
+<figure>
+<pre class="term"><span class="dim">$ ./build/poc</span>
+epoch 100000 :
+        [0, 0] : 0.004935
+        [1, 0] : 0.995334
+        [0, 1] : 0.994323
+        [1, 1] : 0.004444</pre>
+  <figcaption><b>Figure 3.</b> Sortie de la preuve de concept : les deux entrées, puis la réponse du réseau (attendu : 0, 1, 1, 0).</figcaption>
+</figure>
+
+<p class="tags"><span class="k">Mobilise</span><span class="pill">C</span><span class="pill">Réseaux de neurones</span><span class="pill">Maths appliquées</span><span class="pill">Organisation d’un dépôt</span><span class="pill">Travail en équipe</span></p>
+
+<div class="note">
+  <span class="k">Ce que j’en retiens</span>
+  <p>Ce projet démarre mieux que Myst : l’interface du réseau de neurones est fixée dans des fichiers d’en-tête, et chaque fonctionnalité a sa branche. Point de vigilance : le réseau n’a encore appris qu’un problème à quatre exemples. Le passage à de vraies images de lettres posera des questions que je n’ai pas encore rencontrées : taille du réseau, durée de l’entraînement, sauvegarde des poids.</p>
+</div>
+
+<details class="code project-code" id="annexe-2" data-pdf-title="Extrait 2 : OCR, le cœur du réseau de neurones">
+  <summary>Voir un extrait de code <span>Le réseau de neurones de l’OCR</span></summary>
+  <p>La sortie de chaque couche devient l’entrée de la suivante. L’erreur est ensuite calculée sur la dernière couche, puis remontée couche par couche.</p>
+  <figure>
+<pre>void network_forward(Network *net, double *input)
+{
+	double *a = input;
+	for (int i = 0; i &lt; net->n_layers; i++)
+	{
+		layer_forward(net->layers[i], a);
+		a = net->layers[i]->a;
+	}
+}
+
+void network_backward(Network *net, double *expected)
+{
+	int last = net->n_layers - 1;
+
+	layer_delta_output(net->layers[last], expected);
+
+	for (int i = last - 1; i >= 0; i--)
+		layer_delta_hidden(net->layers[i], net->layers[i + 1]);
+}
+
+void network_update(Network *net, double *input, double lr)
+{
+	double *prev_input = input;
+
+	for (int i = 0; i &lt; net->n_layers; i++)
+	{
+		layer_update(net->layers[i], prev_input, lr);
+		prev_input = net->layers[i]->a;
+	}
+}</pre>
+  <figcaption><b>Source.</b> Fichier <span class="mono">network.c</span> : propagation avant, rétropropagation, mise à jour des poids.</figcaption>
+  </figure>
+</details>
+
+<h2 class="newpage" id="icarus"><span class="num">3.4</span>Icarus : dessiner mon propre bureau (en cours)</h2>
+
+<table class="meta">
+  <tr>
+    <td style="width:25%"><span class="k">Cadre</span>Projet personnel</td>
+    <td style="width:21%"><span class="k">Quand</span>Depuis octobre 2026</td>
+    <td style="width:17%"><span class="k">Équipe</span>Seul</td>
+    <td><span class="k">Outils</span>QML (Quickshell), Hyprland, Linux, Git</td>
+  </tr>
+</table>
+
+<h3>Le but</h3>
+<p>Remplacer la barre d’état de mon environnement Linux par un seul « îlot » en haut de l’écran. Il affiche l’essentiel (espaces de travail, heure, réseau, batterie) et s’agrandit au survol (figure 4). Ma priorité : la stabilité avant les fonctionnalités.</p>
+
+<h3>Ma part et ma méthode</h3>
+<p>Je conçois l’interface et je pilote le développement. J’écris d’abord une spécification, que je fige par tranches avant de coder. Pour chaque élément, je compare plusieurs variantes à l’écran avant de trancher : taille des pastilles, forme de la batterie, espacements. Je développe avec un assistant de programmation (Claude Code) et une règle : je ne valide que le code que je peux expliquer ligne par ligne. L’assistant me fait gagner du temps sur un langage que je découvre ; les décisions, la relecture et les tests restent les miens.</p>
+
+<figure>
+  <div class="callout">
+    <img src="assets/images/icarus-ilot.png" alt="L'îlot d'Icarus">
+    <span class="tick up" style="left:32.3%"></span><span class="lab up" style="left:32.3%">espaces de travail</span>
+    <span class="tick up" style="left:61.4%"></span><span class="lab up" style="left:61.4%">réseau</span>
+    <span class="tick down" style="left:49.9%"></span><span class="lab down" style="left:49.9%">heure</span>
+    <span class="tick down" style="left:68.9%"></span><span class="lab down" style="left:68.9%">batterie en charge</span>
+  </div>
+  <figcaption><b>Figure 4.</b> L’îlot d’Icarus sur mon bureau (capture d’écran).</figcaption>
+</figure>
+
+<h3>Comment c’est construit</h3>
+<p>Chaque source de données (heure, réseau, batterie) est un service unique, séparé de son affichage. Tous les réglages ont une valeur par défaut livrée avec le code : Icarus démarre sur une machine vierge, sans configuration. Une erreur dans le fichier de réglages ne bloque rien : la valeur par défaut prend le relais.</p>
+
+<h3>Où j’en suis</h3>
+<p>La version 0.0.1 est étiquetée depuis le 12 octobre 2026. Laissée allumée une nuit entière, elle occupe 132&nbsp;Mo de mémoire sans croissance, pour environ 0,02&nbsp;% du processeur. Le dépôt compte 34 commits, avec une branche par fonctionnalité.</p>
+
+<p class="tags"><span class="k">Mobilise</span><span class="pill">Conception d’interface</span><span class="pill">QML</span><span class="pill">Spécification</span><span class="pill">Git : branches, versions</span><span class="pill">Usage critique de l’IA</span></p>
+
+<div class="note">
+  <span class="k">Ce que j’en retiens</span>
+  <p>Ce projet a changé ma méthode : spécifier avant de coder, une branche par fonctionnalité, des messages de commit normalisés. Mon défaut est de courir après les nouvelles idées. Je les note désormais dans un fichier à part, sans toucher à la tranche en cours.</p>
+</div>
+
+<!-- ======================= 04 Engagement ======================= -->
+
+<h1 class="newpage" id="engagement" data-title="S’engager"><span class="num">04</span>S’engager <small>le Bureau des élèves</small></h1>
+
+<p>Mon engagement au Bureau des élèves me permet de développer la communication professionnelle, l’organisation et le suivi de relations avec des entreprises.</p>
+
+<h2 id="bde"><span class="num">4.1</span>Trouver des partenaires pour les étudiants</h2>
+
+<table class="meta">
+  <tr>
+    <td style="width:24%"><span class="k">Où</span>BDE, EPITA Toulouse</td>
+    <td style="width:38%"><span class="k">Rôle</span>Vice-responsable du pôle partenariats</td>
+    <td style="width:15%"><span class="k">Équipe</span>4 personnes</td>
+    <td><span class="k">Face à</span>Entreprises partenaires</td>
+  </tr>
+</table>
+
+<p>Le pôle cherche des entreprises prêtes à offrir des avantages aux étudiants. Je seconde le responsable, je contacte des entreprises et je suis les dossiers jusqu’à la signature.</p>
+
+<p>Avec le responsable du pôle, j’ai participé aux échanges qui ont abouti au partenariat avec Klub, une application de bons plans pour les moins de 26&nbsp;ans : les étudiants obtiennent 5&nbsp;€ de réduction sur l’abonnement annuel. Nous suivons les prises de contact, les relances et l’avancement de chaque dossier dans un tableau de bord partagé.</p>
+
+<p class="tags"><span class="k">Mobilise</span><span class="pill">Communication écrite</span><span class="pill">Négociation</span><span class="pill">Organisation</span><span class="pill">Travail en équipe</span><span class="pill">Fiabilité</span></p>
+
+<div class="note">
+  <span class="k">Ce que j’en retiens</span>
+  <p>Convaincre une entreprise n’a rien à voir avec convaincre un compilateur. Il faut comprendre ce que l’autre y gagne, relancer sans insister et tenir ses engagements. J’y apprends à écrire un message court et clair à quelqu’un qui ne me doit rien. Il me reste à mener un partenariat seul.</p>
+</div>
+
+<!-- ======================= 05 Compétences ======================= -->
+
+<h1 class="tight" id="competences" data-title="Faire le point"><span class="num">05</span>Faire le point <small>compétences et bilan</small></h1>
+
+<p>De ces expériences, je retiens trois compétences clés, chacune soutenue par plusieurs preuves.</p>
+
+<div class="keep">
+<p class="kicker">Compétence clé 1 sur 3</p>
+<h2 id="c1"><span class="num">5.1</span>Programmer au plus près de la machine et du réseau</h2>
+
+<p><strong>À quoi elle sert.</strong> En cybersécurité comme en intelligence artificielle, utiliser des outils ne suffit pas : il faut savoir ce qu’ils font de la mémoire et de ce qui circule sur le réseau.</p>
+
+<ul class="proofs">
+  <li><a class="ref" aria-label="Voir cette preuve" href="#minimake"></a><b>MiniMake</b> 800 lignes de C, mémoire gérée à la main, processus fils</li>
+  <li><a class="ref" aria-label="Voir cette preuve" href="#myst"></a><b>Myst</b> serveur UDP asynchrone, synchronisation de plusieurs machines</li>
+  <li><a class="ref" aria-label="Voir cette preuve" href="#ocr"></a><b>OCR</b> réseau de neurones écrit sans bibliothèque</li>
+  <li><a class="ref" aria-label="Voir cette preuve" href="#parcours"></a><b>Cursus</b> C depuis la première année, PFA, assembleur</li>
+</ul>
+
+<table class="pair">
+  <tr>
+    <td>
+      <h3>Acquis</h3>
+      <ul>
+        <li>Écrire en C sans fuite de mémoire.</li>
+        <li>Lancer des processus et les attendre.</li>
+        <li>Faire dialoguer des machines en UDP.</li>
+        <li>Traduire une formule en code.</li>
+      </ul>
+    </td>
+    <td>
+      <h3>À consolider</h3>
+      <ul>
+        <li>Le réseau en C : je ne l’ai fait qu’en Python.</li>
+        <li>Les outils de mesure : débogueur, profileur.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<p class="next"><span class="k">Ensuite →</span> sur l’OCR, ajouter un débogueur et Valgrind ; réécrire en C un petit client-serveur.</p>
+</div>
+
+<div class="keep newpage">
+<p class="kicker">Compétence clé 2 sur 3</p>
+<h2 id="c2"><span class="num">5.2</span>Concevoir un logiciel, de l’architecture à l’interface</h2>
+
+<p><strong>À quoi elle sert.</strong> Un programme qui fonctionne ne suffit pas. Il doit être découpé pour évoluer, et pensé pour celui qui l’utilise.</p>
+
+<ul class="proofs">
+  <li><a class="ref" aria-label="Voir cette preuve" href="#minimake"></a><b>MiniMake</b> découpage en tokenizer, parser et exécuteur</li>
+  <li><a class="ref" aria-label="Voir cette preuve" href="#ocr"></a><b>OCR</b> en-têtes séparés du code, une bibliothèque par module</li>
+  <li><a class="ref" aria-label="Voir cette preuve" href="#icarus"></a><b>Icarus</b> spécification, services séparés de l’affichage, choix sur aperçus</li>
+  <li><a class="ref" aria-label="Voir cette preuve" href="#myst"></a><b>Myst</b> menus, retour visuel des coups, sprites, installation en une commande</li>
+</ul>
+
+<table class="pair">
+  <tr>
+    <td>
+      <h3>Acquis</h3>
+      <ul>
+        <li>Découper un programme en modules.</li>
+        <li>Comparer des variantes avant de choisir.</li>
+        <li>Soigner ce que voit l’utilisateur.</li>
+      </ul>
+    </td>
+    <td>
+      <h3>À consolider</h3>
+      <ul>
+        <li>Décider l’architecture avant de coder.</li>
+        <li>Documenter mes choix dans le code.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<p class="next"><span class="k">Ensuite →</span> sur l’OCR, écrire l’en-tête et un test avant chaque module ; tenir un README à jour.</p>
+</div>
+
+<div class="keep">
+<p class="kicker">Compétence clé 3 sur 3</p>
+<h2 id="c3"><span class="num">5.3</span>Travailler en équipe et intégrer le travail des autres</h2>
+
+<p><strong>À quoi elle sert.</strong> Un logiciel se construit à plusieurs. Le plus difficile n’est pas d’écrire sa partie, mais de la faire fonctionner avec celles des autres.</p>
+
+<ul class="proofs">
+  <li><a class="ref" aria-label="Voir cette preuve" href="#myst"></a><b>Myst</b> fusion des branches ; monstres d’un coéquipier adaptés au serveur</li>
+  <li><a class="ref" aria-label="Voir cette preuve" href="#ocr"></a><b>OCR</b> ossature commune du dépôt, pensée pour quatre personnes</li>
+  <li><a class="ref" aria-label="Voir cette preuve" href="#bde"></a><b>BDE</b> pôle de quatre personnes, partenariat mené en binôme</li>
+</ul>
+
+<table class="pair">
+  <tr>
+    <td>
+      <h3>Acquis</h3>
+      <ul>
+        <li>Reprendre et adapter le code d’un coéquipier.</li>
+        <li>Résoudre des conflits de fusion.</li>
+        <li>Préparer un cadre commun au groupe.</li>
+        <li>Seconder un responsable.</li>
+      </ul>
+    </td>
+    <td>
+      <h3>À consolider</h3>
+      <ul>
+        <li>Partager mon travail plus tôt.</li>
+        <li>Garder une trace écrite des décisions.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<p class="next"><span class="k">Ensuite →</span> pousser ma branche dès le premier jour ; noter les décisions du groupe ; mener seul un partenariat.</p>
+</div>
+
+<h2 id="synthese"><span class="num">5.4</span>Vue d’ensemble</h2>
+
+<p>Mes compétences techniques (<em>hard skills</em>), mes méthodes et mes compétences humaines (<em>soft skills</em>), avec le niveau que je m’attribue. Les preuves sont dans les projets de la partie 3.</p>
+
+<p class="legend"><span class="dots"><i class="on"></i><i class="on"></i><i class="on"></i></span> autonome &nbsp;·&nbsp; <span class="dots"><i class="on"></i><i class="on"></i><i></i></span> en progression &nbsp;·&nbsp; <span class="dots"><i class="on"></i><i></i><i></i></span> découverte</p>
+
+<table class="tri">
+  <tr>
+    <td>
+      <h3>Technique</h3>
+      <div class="item"><span class="dots"><i class="on"></i><i class="on"></i><i class="on"></i></span>C : mémoire, processus</div>
+      <div class="item"><span class="dots"><i class="on"></i><i class="on"></i><i class="on"></i></span>Python</div>
+      <div class="item"><span class="dots"><i class="on"></i><i class="on"></i><i></i></span>Réseau : UDP</div>
+      <div class="item"><span class="dots"><i class="on"></i><i class="on"></i><i></i></span>Réseaux de neurones</div>
+      <div class="item"><span class="dots"><i class="on"></i><i class="on"></i><i></i></span>QML, Linux au quotidien</div>
+      <div class="item"><span class="dots"><i class="on"></i><i></i><i></i></span>Assembleur, sécurité</div>
+    </td>
+    <td>
+      <h3>Méthode</h3>
+      <div class="item"><span class="dots"><i class="on"></i><i class="on"></i><i class="on"></i></span>Git : branches, versions</div>
+      <div class="item"><span class="dots"><i class="on"></i><i class="on"></i><i></i></span>Découpage en modules</div>
+      <div class="item"><span class="dots"><i class="on"></i><i class="on"></i><i></i></span>Spécification</div>
+      <div class="item"><span class="dots"><i class="on"></i><i class="on"></i><i></i></span>Assistants IA</div>
+      <div class="item"><span class="dots"><i class="on"></i><i></i><i></i></span>Tests automatiques</div>
+    </td>
+    <td>
+      <h3>Humain</h3>
+      <div class="item"><span class="dots"><i class="on"></i><i class="on"></i><i class="on"></i></span>Volonté d’apprendre</div>
+      <div class="item"><span class="dots"><i class="on"></i><i class="on"></i><i class="on"></i></span>Souci du détail</div>
+      <div class="item"><span class="dots"><i class="on"></i><i class="on"></i><i></i></span>Travail en équipe</div>
+      <div class="item"><span class="dots"><i class="on"></i><i class="on"></i><i></i></span>Communication écrite</div>
+      <div class="item"><span class="dots"><i class="on"></i><i></i><i></i></span>Négociation</div>
+    </td>
+  </tr>
+</table>
+
+<p><strong>Langues :</strong> français (langue maternelle), anglais (niveau B2).</p>
+
+<div class="keep newpage">
+<h2 id="bilan"><span class="num">5.5</span>Forces et chantiers</h2>
+
+<p>Mes points forts, puis mes axes d’amélioration, chacun avec la première action prévue.</p>
+
+<table class="pair">
+  <tr>
+    <td>
+      <h3>Je peux m’appuyer sur</h3>
+      <ul>
+        <li>Je comprends ce que j’écris, jusqu’à la mémoire et au réseau.</li>
+        <li>Je vais au bout : installation, cas d’erreur, finitions.</li>
+        <li>J’apprends vite et seul un outil nouveau.</li>
+        <li>J’ai le souci du détail visuel.</li>
+        <li>Je sais reprendre et intégrer le code des autres.</li>
+      </ul>
+    </td>
+    <td>
+      <h3>Je dois faire progresser</h3>
+      <ul>
+        <li><strong>Partager plus tôt :</strong> une branche poussée dès le premier jour.</li>
+        <li><strong>Tester davantage :</strong> les cas d’erreur, avant le code.</li>
+        <li><strong>Mobiliser mes acquis en entreprise :</strong> rechercher un stage cette année.</li>
+        <li><strong>Pratiquer la cybersécurité :</strong> des défis d’entraînement en ligne.</li>
+        <li><strong>Écrire :</strong> documentation et traces des décisions.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+</div>
+
+<!-- ======================= 06 Ouverture ======================= -->
+
+<h1 id="ouverture" data-title="Continuer"><span class="num">06</span>Continuer <small>perspectives</small></h1>
+
+<h2 id="attire"><span class="num">6.1</span>Ce qui m’attire</h2>
+
+<ul>
+  <li><strong>Intelligence artificielle.</strong> Écrire un réseau de neurones à la main pour l’OCR m’a donné envie de comprendre les modèles, et pas seulement de les utiliser.</li>
+  <li><strong>Cybersécurité.</strong> Je l’ai découverte en première année. Le réseau de Myst et mon usage quotidien de Linux m’en ont rapproché, mais je ne l’ai pas encore pratiquée : c’est le domaine où j’ai le plus à apprendre.</li>
+  <li><strong>Jeu vidéo.</strong> Mon point de départ, et un terrain où le réseau, l’algorithmique et le graphisme se rencontrent.</li>
+</ul>
+
+<h2 id="vise"><span class="num">6.2</span>Ce que je vise</h2>
+
+<p>Je souhaite poursuivre le cycle ingénieur de l’EPITA et construire un projet professionnel en développement logiciel, avec une spécialisation en intelligence artificielle ou en cybersécurité. Pour préciser cette orientation, je compte terminer le projet OCR, pratiquer la sécurité sur des environnements d’entraînement et rechercher un stage en entreprise. Mon objectif est de contribuer à des logiciels fiables, de renforcer mes méthodes de test et de documentation, et de progresser au contact d’une équipe professionnelle.</p>
+
+<!-- ======================= 07 Conclusion ======================= -->
+
+<h1 id="conclusion" data-title="Conclure"><span class="num">07</span>Conclure</h1>
+
+<p>En un an, je suis passé de petits programmes en Python à un serveur de jeu en réseau, un outil système en C et un réseau de neurones écrit à la main. Le fil est resté le même : comprendre comment les choses fonctionnent, et soigner ce que l’on voit.</p>
+
+<p>Ce portfolio m’a surtout servi à regarder ce qui ne se voit pas dans le code : ma façon de travailler. Elle a changé entre Myst et l’OCR, et il reste du chemin : partager plus tôt, tester davantage, confronter ce que je sais faire à une entreprise.</p>
+
+<p>Je le mettrai à jour à la fin de chaque semestre. Le bilan de l’OCR, un stage en entreprise et mes progrès en cybersécurité permettront d’enrichir cette réflexion et de préciser mon orientation professionnelle.</p>
+
+</main>
+</div>
+<section class="contact-panel web-only" id="contact" aria-labelledby="contact-title">
+    <h2 id="contact-title" tabindex="-1">Me contacter</h2>
+    <p>Pour échanger sur un stage, un projet ou mon parcours :</p>
+    <p><label for="contact-email">Adresse e-mail</label><input id="contact-email" type="text" value="l.schwartz_pro@protonmail.com" readonly spellcheck="false" autocomplete="off"></p>
+    <p class="actions"><a class="btn primary" href="mailto:l.schwartz_pro@protonmail.com?subject=Contact%20%E2%80%94%20Portfolio%20Louis%20Schwartz">Écrire un e-mail</a><button class="btn" type="button" data-action="copy-email" hidden>Copier l’adresse</button></p>
+    <p>Si votre messagerie ne s’ouvre pas, copiez l’adresse dans votre service de courrier habituel.</p>
+    <p id="contact-status" role="status" aria-live="polite"></p>
+</section>
+<details class="references" id="bibliographie">
+  <summary>Sources et références</summary>
+<div class="biblio">
+  <p>Free Software Foundation. (2023). <em>GNU make manual</em>. <a class="url" href="https://www.gnu.org/software/make/manual/">https://www.gnu.org/software/make/manual/</a></p>
+  <p>Le Collen, K. (2026). <em>Portfolio professionnel : valorisation des compétences et réalisation d’un outil évolutif</em> [Support de cours, semestre 3]. EPITA.</p>
+  <p>Pygame. (s. d.). <em>Pygame documentation</em>. <a class="url" href="https://www.pygame.org/docs/">https://www.pygame.org/docs/</a></p>
+  <p>Python Software Foundation. (s. d.). <em>asyncio : asynchronous I/O</em>. Dans <em>Python 3 documentation</em>. <a class="url" href="https://docs.python.org/3/library/asyncio.html">https://docs.python.org/3/library/asyncio.html</a></p>
+  <p>Quickshell. (s. d.). <em>Quickshell documentation</em>. <a class="url" href="https://quickshell.org/docs/">https://quickshell.org/docs/</a></p>
+  <p>ToDo Skills. (2025). <em>La roue des 50 soft skills</em>. <a class="url" href="https://www.todoskills.com/softskills/">https://www.todoskills.com/softskills/</a></p>
+</div>
+</details>
+<footer class="foot">
+  <p>Louis Schwartz · Portfolio, version du semestre 3 (2026-2027) · <a href="documents/portfolio-louis-schwartz-numerique.pdf">version PDF</a></p>
+</footer>
+<script src="assets/scripts/portfolio.js"></script>
+</body>
+</html>

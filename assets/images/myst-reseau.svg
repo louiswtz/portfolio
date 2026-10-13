@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 262" font-family="Adwaita Sans, Liberation Sans, sans-serif">
+  <!-- Clients -->
+  <text x="110" y="18" text-anchor="middle" font-size="11.5" fill="#5a5f6b" font-family="JetBrainsMono Nerd Font Mono, monospace" letter-spacing="1">CLIENTS</text>
+  <g font-size="15" fill="#15161a" font-weight="600" text-anchor="middle">
+    <rect x="12" y="32" width="196" height="50" rx="10" fill="#ffffff" stroke="#15161a" stroke-width="1.6"/>
+    <text x="110" y="62">Joueur 1</text>
+    <rect x="12" y="116" width="196" height="50" rx="10" fill="#ffffff" stroke="#15161a" stroke-width="1.6"/>
+    <text x="110" y="146">Joueur 2</text>
+    <rect x="12" y="200" width="196" height="50" rx="10" fill="#ffffff" stroke="#15161a" stroke-width="1.6" stroke-dasharray="5 4"/>
+    <text x="110" y="230">Spectateur</text>
+  </g>
+
+  <!-- Server -->
+  <text x="705" y="18" text-anchor="middle" font-size="11.5" fill="#5a5f6b" font-family="JetBrainsMono Nerd Font Mono, monospace" letter-spacing="1">SERVEUR · UN SEUL PROCESSUS (ASYNCIO)</text>
+  <rect x="522" y="32" width="366" height="218" rx="14" fill="#f2f0fb" stroke="#5a3fd6" stroke-width="1.8"/>
+  <g font-size="14.5" fill="#15161a" font-weight="600">
+    <rect x="538" y="46" width="334" height="40" rx="8" fill="#ffffff" stroke="#b9b0ec" stroke-width="1.2"/>
+    <text x="554" y="71">Réception des messages</text>
+    <rect x="538" y="96" width="334" height="40" rx="8" fill="#ffffff" stroke="#b9b0ec" stroke-width="1.2"/>
+    <text x="554" y="121">Diffusion de l'état</text>
+    <rect x="538" y="146" width="334" height="40" rx="8" fill="#ffffff" stroke="#b9b0ec" stroke-width="1.2"/>
+    <text x="554" y="171">Monstres et collisions</text>
+    <rect x="538" y="196" width="334" height="40" rx="8" fill="#ffffff" stroke="#b9b0ec" stroke-width="1.2"/>
+    <text x="554" y="221">Annonce sur le réseau local</text>
+  </g>
+  <g font-size="12.5" fill="#3d2aa3" text-anchor="end" font-family="JetBrainsMono Nerd Font Mono, monospace">
+    <text x="858" y="121">30 fois / s</text>
+    <text x="858" y="171">20 fois / s</text>
+    <text x="858" y="221">1 fois / 2 s</text>
+  </g>
+
+  <!-- Arrows -->
+  <g stroke="#15161a" stroke-width="1.8" fill="none">
+    <line x1="220" y1="88" x2="502" y2="88"/>
+    <line x1="510" y1="190" x2="228" y2="190"/>
+  </g>
+  <polygon points="512,88 500,82 500,94" fill="#15161a"/>
+  <polygon points="218,190 230,184 230,196" fill="#15161a"/>
+  <g font-size="13" fill="#15161a" text-anchor="middle">
+    <text x="365" y="78">position, attaque, coup porté</text>
+    <text x="365" y="210">état complet : joueurs et monstres</text>
+  </g>
+  <text x="365" y="143" text-anchor="middle" font-size="12" fill="#3d2aa3" font-family="JetBrainsMono Nerd Font Mono, monospace" letter-spacing="0.5">UDP · MESSAGES JSON</text>
+</svg>
